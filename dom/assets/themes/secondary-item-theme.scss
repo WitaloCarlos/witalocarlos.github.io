@@ -1,0 +1,10 @@
+@import '~@angular/material/theming';
+
+@mixin secondary-item-theme($theme) {
+
+    $primary: map-get($theme, primary);
+  
+    .secondary-item {
+      background-color: mat-color($primary, lighter);
+    }
+  }
