@@ -1,0 +1,17 @@
+@import '~@angular/material/theming';
+
+@mixin dom-theme-extension($theme) {
+
+    $primary: map-get($theme, primary);
+  
+    .dom-panel-header {
+      padding: 6px;
+      background-color: mat-color($primary, default);
+
+      .dom-title {
+        margin: 6px;
+        color: white;
+      }
+    }
+  }
+  
