@@ -3,6 +3,7 @@
 @mixin dom-dialog-theme($theme) {
 
     $primary: map-get($theme, primary);
+
   
     .mat-dialog-container {
       padding: 0 !important;

@@ -3,6 +3,11 @@
 @mixin dom-theme-extension($theme) {
 
     $primary: map-get($theme, primary);
+
+    
+    body {
+      background-color: mat-color($primary, 100, 0.5);
+    }
   
     .dom-panel-header {
       padding: 6px;
