@@ -1,11 +1,11 @@
 {
   "name": "ThayCell",
-  "short_name": "Thay",
+  "short_name": "ThayCell",
   "theme_color": "#667eea",
   "background_color": "#fafafa",
   "display": "standalone",
-  "scope": "./thay-cell/",
-  "start_url": "./thay-cell/",
+  "scope": "./",
+  "start_url": "./",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
