@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>JSON to Class</title>
+    <script src="./jsonToClass.js" type="module"></script>
+    <link rel="stylesheet" href="./test.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="./lib/highlightjs/styles/dracula.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>JSON to Class</h1>
+      <h2><small>Parse a JSON object to a Object Class</small></h2>
+      <form>
+        <div>
+          <div class="row">
+            <div class="col">
+              <label for="className"><strong>Base Class Name</strong></label>
+              <input
+                type="text"
+                class="form-control"
+                id="className"
+                placeholder="Base Class Name"
+              />
+            </div>
+            <div class="col">
+              <label for="buildEngine"><strong>Select Language</strong></label>
+              <select name="engine" class="form-control" id="buildEngine">
+                <option value="csharp">C#</option>
+                <option value="csharp_w">C# (Wrapper)</option>
+                <option value="java">Java</option>
+                <option value="kotlin">Kotlin</option>
+                <option value="kotlin_d">Kotlin (Data Class)</option>
+                <option value="kotlin_bo">Kotlin (BaseObservable)</option>
+                <option value="typescript">Typescript</option>
+                <option value="typescript_if">Typescript (Interface)</option>
+                <option value="parse_ts">Parse SDK JS (Typescript)</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="txtRawJson"><strong>Paste JSON</strong></label>
+            <textarea
+              name="txtRaw"
+              class="form-control"
+              id="txtRawJson"
+              rows="15"
+              cols="50"
+              placeholder="JSON content"
+            ></textarea>
+          </div>
+          <div class="row justify-content-between">
+            <div>
+              <button
+                type="button"
+                class="btn btn-outline-danger"
+                id="btnClearCl"
+              >
+                Clear Classes
+              </button>
+              <button type="button" class="btn btn-danger" id="btnClear">
+                Clear All
+              </button>
+            </div>
+            <div>
+              <button type="button" class="btn btn-success" id="btnGenerate">
+                Generate
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <div id="divResults"></div>
+    </div>
+    <script src="./test.js" type="module"></script>
+    <script src="./lib/highlightjs/highlight.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
